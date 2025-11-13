@@ -1,7 +1,7 @@
 // Load and display recipes on home page (limited to 3)
 (function() {
   // Fetch the recipes data
-  fetch('/recipes-data.json')
+  fetch('./recipes-data.json')
     .then(response => response.json())
     .then(recipes => {
       const grid = document.getElementById('homeRecipeGrid');
