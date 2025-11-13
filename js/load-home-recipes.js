@@ -1,11 +1,14 @@
 // Load and display recipes on home page (limited to 3)
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Fetch the recipes data
   fetch('./recipes-data.json')
     .then(response => response.json())
     .then(recipes => {
       const grid = document.getElementById('homeRecipeGrid');
-      if (!grid) return;
+      if (!grid) {
+        console.error('homeRecipeGrid element not found');
+        return;
+      }
 
       // Clear existing placeholder
       grid.innerHTML = '';
@@ -44,4 +47,4 @@
         grid.innerHTML = '<div class="w-dyn-empty"><div>Error loading recipes. Please refresh the page.</div></div>';
       }
     });
-})();
+});

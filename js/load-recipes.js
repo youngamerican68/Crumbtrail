@@ -1,11 +1,14 @@
 // Load and display recipes dynamically
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Fetch the recipes data
   fetch('./recipes-data.json')
     .then(response => response.json())
     .then(recipes => {
       const grid = document.getElementById('recipeGrid');
-      if (!grid) return;
+      if (!grid) {
+        console.error('recipeGrid element not found');
+        return;
+      }
 
       // Clear existing placeholder
       grid.innerHTML = '';
@@ -58,4 +61,4 @@
         grid.innerHTML = '<div class="w-dyn-empty"><div>Error loading recipes. Please refresh the page.</div></div>';
       }
     });
-})();
+});
