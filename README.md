@@ -78,14 +78,20 @@ This site can be deployed to any static hosting provider for **FREE**. Recommend
 
 ## Important Notes
 
-### Dynamic Content
+### Recipe Content
 
-⚠️ **This site has Webflow CMS placeholders** for recipes (marked with `w-dyn-bind-empty`).
+✅ **Recipe pages have been migrated to static HTML!**
 
-If you had recipes in Webflow CMS, you need to either:
-1. Export recipe data from Webflow and populate manually
-2. Connect to a headless CMS (Contentful, Sanity, etc.)
-3. Accept that recipe sections will show "No items found"
+The site now includes:
+- Static recipe pages in `/recipes/` directory
+- Recipe data stored in `recipes-data.json`
+- Dynamic JavaScript loading for recipe grids
+- Individual recipe pages with full SEO markup
+
+To add more recipes:
+1. Add recipe data to `recipes-data.json`
+2. Run `node generate-recipes.js` to create HTML pages
+3. Recipes will automatically appear on homepage and recipes listing
 
 ### External Dependencies
 
