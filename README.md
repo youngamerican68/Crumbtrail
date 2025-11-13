@@ -93,6 +93,20 @@ To add more recipes:
 2. Run `node generate-recipes.js` to create HTML pages
 3. Recipes will automatically appear on homepage and recipes listing
 
+### Recipe Images
+
+**Current Status:** Recipe images are hosted on Webflow's CDN (`cdn.prod.website-files.com`)
+
+**Options:**
+1. **Keep CDN URLs** (easiest): Images typically continue working after leaving Webflow
+2. **Download locally** (recommended for full independence): Run the download script
+
+To download images locally on your machine:
+```bash
+node download-recipe-images.js  # Downloads images to /images/recipes/
+node generate-recipes.js        # Regenerates pages with local paths
+```
+
 ### External Dependencies
 
 The site uses CDN-hosted resources:
