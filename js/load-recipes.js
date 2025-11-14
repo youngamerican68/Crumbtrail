@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <a id="recipeItem" href="recipes/${recipe.slug}.html" class="recipe-single-item w-inline-block">
             <div class="recipe-grid-container">
               <div class="recipe-image-wrap" style="background-image: url('${recipe.coverPhoto}'); background-size: cover; background-position: center; height: 250px; border-radius: 8px;"></div>
-              <div class="recipe-category-tag">
-                <div class="card-tag single">Cookie Recipe</div>
-              </div>
               <h1 id="recipeTitle" class="card-title">${recipe.name}</h1>
               <div class="card-description">${recipe.oneLiner}</div>
               <div class="card-details row">
