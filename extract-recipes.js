@@ -27,7 +27,6 @@ const recipeNames = [
   "Rosemary and Apricot Shortbread Cookie Recipe",
   "Rosemary and Lime Cookie Recipe",
   "Rutabaga and Nutmeg Cookie Recipe",
-  "Salted Caramel and Pretzel Chocolate Chip Cookie Recipe",
   "Soft Matcha with Raspberry and White Chocolate Cookie Recipe",
   "Spiced Chai Masala Cookie Recipe",
   "White Chocolate and Almonds Cookie Recipe"
@@ -60,7 +59,6 @@ const recipeSlugs = [
   "rosemary-apricot-shortbread-recipe",
   "rosemary-and-lime-cookies-recipe",
   "rutabaga-and-nutmeg-cookies-recipe",
-  "salted-caramel-and-pretzel-chocolate-chip-cookie-recipe",
   "soft-matcha-cookies-with-raspberry-and-white-chocolate-recipe",
   "spiced-chai-masala-cookie-recipe",
   "white-chocolate-and-almonds-recipe"
